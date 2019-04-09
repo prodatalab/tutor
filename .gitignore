@@ -7,3 +7,4 @@ TODO
 /dist/
 /releases/
 /tutor_openedx.egg-info/
+tutor/__pycache__
