@@ -81,6 +81,7 @@ RUN openedx-assets xmodule \
     && openedx-assets webpack --env=prod \
     && openedx-assets common
 COPY ./themes/ /openedx/themes/
+COPY /home/prodatalab/.local/share/tutor/env/build/openedx/themes/fcc-theme /openedx/themes/
 RUN openedx-assets themes \
     && openedx-assets collect --settings=tutor.assets
 
